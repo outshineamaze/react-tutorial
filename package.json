@@ -1,5 +1,5 @@
 {
-  "name": "react-xsx",
+  "name": "react-tutorial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0"
   },
+  "homepage" : "http://outshineamaze.github.io/react-tutorial",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
