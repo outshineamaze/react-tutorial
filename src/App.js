@@ -109,16 +109,12 @@ class App extends Component {
                           <input type="text" className="form-control" disabled={item.flag} data-index={item.index} value={item.value} onChange={this.onInput}></input>
                         </div>
                       </div>
-                      <div className="col-xs-1 col-md-1">
-                        <button className={"btn " + (!item.flag ? "btn-info" : "btn-success")} onClick={(event) => { this.setflag(event, item.index) }}>
+                      <div className="col-xs-2 col-md-2">
+                        <button  className={"btn " + (!item.flag ? "btn-info" : "btn-success")} onClick={(event) => { this.setflag(event, item.index) }}>
                           <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
                           {item.flag ? '已完成' : '未完成'}
                         </button>
-
-
-                      </div>
-                      <div className="col-xs-1 col-md-1">
-                        <button className="btn btn-danger" onClick={(event) => { this.deleteItem(event, item.index, 'todo') }}>
+                        <button style={{marginLeft: '5px'}} className="btn btn-danger" onClick={(event) => { this.deleteItem(event, item.index, 'todo') }}>
                           <span className="glyphicon glyphicon-ok" aria-hidden="true"></span>删除
                         </button>
                       </div>
